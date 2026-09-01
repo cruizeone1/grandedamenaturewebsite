@@ -1,9 +1,7 @@
-node_modules/
-.next/
-out/
-.env
-.env.*
-.wrangler/
-*.log
 .DS_Store
 Thumbs.db
+node_modules/
+.wrangler/
+*.log
+.env
+.env.*
