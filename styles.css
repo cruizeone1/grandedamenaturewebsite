@@ -135,6 +135,61 @@ button{font:inherit}
 .footer-message strong{display:block;font:17px/1 var(--serif);font-weight:400}
 .footer-message small{display:block;color:#7a776e;font:8px/1.2 var(--sans);margin-top:8px}
 
+/* Inner pages */
+.page-hero{
+  padding:48px 40px 36px;
+  background:linear-gradient(180deg,#fbf6ed 0%,var(--cream) 100%);
+  border-bottom:1px solid var(--line);
+  text-align:center;
+}
+.page-hero h1{font-family:var(--serif);font-weight:400;font-size:42px;line-height:1.05;color:var(--forest);margin:0}
+.page-hero .hero-copy{max-width:520px;margin:14px auto 0;font:14px/1.65 var(--serif);color:#53554c}
+.page-main{padding:0 19px 20px}
+.page-panel{
+  margin-top:18px;
+  background:rgba(255,251,244,.97);
+  border:1px solid var(--line);
+  border-radius:14px;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+.editorial{padding:36px 48px 40px}
+.editorial h2{font-family:var(--serif);font-weight:400;font-size:28px;line-height:1.1;color:var(--forest);margin:32px 0 12px}
+.editorial h2:first-child{margin-top:0}
+.editorial p{font:14px/1.75 var(--serif);color:#53554c;margin:0 0 16px}
+.editorial .lead{font-size:16px;line-height:1.7;color:#3d4a3a}
+.story-layout{display:grid;grid-template-columns:1fr 300px;gap:32px;align-items:start}
+.story-layout .editorial{padding-right:0}
+.story-aside{padding:36px 24px 36px 0}
+.story-aside img{border-radius:14px;width:100%;object-fit:cover}
+.story-aside .line-art{margin-top:16px;opacity:.82;mix-blend-mode:multiply}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:36px 48px}
+.contact-card{padding:28px;background:#fffaf2;border:1px solid var(--line);border-radius:12px}
+.contact-card h2{font-family:var(--serif);font-weight:400;font-size:24px;color:var(--forest);margin:0 0 12px}
+.contact-card p{font:14px/1.65 var(--serif);color:#53554c;margin:0 0 10px}
+.contact-card a{color:var(--forest);text-decoration:underline;text-underline-offset:3px}
+.contact-card a:hover{color:var(--gold)}
+.contact-email{font-size:18px;font-family:var(--serif)}
+.ritual-steps{padding:36px 48px;display:grid;gap:20px}
+.ritual-step{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.ritual-step:last-child{border-bottom:0;padding-bottom:0}
+.step-num{width:48px;height:48px;border-radius:50%;background:var(--forest);color:#fff;display:grid;place-items:center;font:18px/1 var(--serif)}
+.ritual-step h3{font-family:var(--serif);font-weight:400;font-size:20px;color:var(--forest);margin:0 0 6px}
+.ritual-step p{font:14px/1.65 var(--serif);color:#53554c;margin:0}
+.ingredient-detail{padding:28px 48px 36px}
+.ingredient-detail .ingredients-grid{margin-bottom:20px}
+.ingredient-copy{font:14px/1.7 var(--serif);color:#53554c;text-align:center;max-width:640px;margin:0 auto 8px}
+.shop-hero-img{padding:32px 48px 0;text-align:center}
+.shop-hero-img img{max-width:220px;margin:0 auto;mix-blend-mode:multiply}
+.shop-details{padding:24px 48px 36px;text-align:center}
+.shop-details h2{font-family:var(--serif);font-weight:400;font-size:32px;color:var(--forest);margin:0 0 8px}
+.shop-details .price{font:16px/1 var(--serif);color:var(--gold);margin-bottom:16px}
+.shop-details p{font:14px/1.7 var(--serif);color:#53554c;max-width:560px;margin:0 auto 20px}
+.text-link{color:var(--forest);text-decoration:underline;text-underline-offset:3px;font-family:var(--serif)}
+.text-link:hover{color:var(--gold)}
+.panel-cta{text-align:center;padding:0 48px 32px}
+.panel-cta .button{margin-top:8px}
+
 @media (max-width:760px){
   .site-header{height:auto;min-height:64px;grid-template-columns:1fr 46px;padding:9px 14px}
   .brand{font-size:20px}.brand img{width:44px;height:44px}
@@ -155,4 +210,9 @@ button{font:inherit}
   .ritual-panel{grid-template-columns:1fr}.ritual-copy{padding:24px}.ritual-copy h2{font-size:36px}.ritual-copy p:not(.kicker){font-size:14px}.ritual-photo{height:250px}
   .cta-panel{margin:12px;height:150px}.cta-panel h2{font-size:28px;padding:0 20px}.cta-foliage{opacity:.55}
   .site-footer{height:auto;grid-template-columns:1fr;gap:18px;padding:22px;text-align:center}.footer-brand{justify-content:center}.footer-center nav{flex-wrap:wrap}.footer-message{text-align:center}
+  .page-hero{padding:36px 24px 28px}.page-hero h1{font-size:34px}
+  .editorial,.contact-grid,.ritual-steps,.ingredient-detail,.shop-hero-img,.shop-details{padding-left:20px;padding-right:20px}
+  .story-layout{grid-template-columns:1fr}.story-aside{padding:0 20px 24px}
+  .contact-grid{grid-template-columns:1fr}
+  .ingredient-detail .ingredients-grid{grid-template-columns:repeat(2,1fr)!important}
 }
